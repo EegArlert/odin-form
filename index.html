@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tutorial</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="parent-form">
+            <h1>
+                This is not a real form. This is part of The Odin Project practicing HTML5 and CSS 
+                to create form with best practice in mind
+            </h1>
+
+            <form action="/submitted.html" method="post">
+                <legend>Sign Up!</legend>
+                <fieldset class="sign-up">
+                    <div class="first-last-name">
+
+                        <label for="first-name">First Name</label>
+                        <input 
+                        type="text" 
+                        id="first-name" 
+                        class="first-name"
+                        required
+                        placeholder="John">
+                
+                        <label for="last-name">Last Name</label>
+                        <input 
+                        type="text" 
+                        id="last-name" 
+                        class="last-name"
+                        placeholder="Doe"
+                        required>
+
+                    </div>
+
+                    <div class="email-phone">
+
+                        <label for="email">Email</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        class="email"
+                        placeholder="you@example.org"
+                        >
+
+                        <label for="phone">Phone</label>
+                        <input 
+                        type="tel" 
+                        id="phone" 
+                        class="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="111-222-3333"
+                        required>
+                    
+                    </div>
+
+                    <div class="password-confirm-container">
+
+                        <label for="password">Password</label>
+                        <input 
+                        type="password" 
+                        id="password" 
+                        class="pwd"
+                        minlength="8"
+                        required>
+
+                        <label for="password-confirm">Confirm Password</label>
+                        <input 
+                        type="password" 
+                        id="password-confirm" 
+                        class="pwd-confirm" 
+                        minlength="8"
+                        required>
+                    </div>
+
+                </fieldset>
+                <p class="error-info"></p>
+                <button type="submit" class="create-account-btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
