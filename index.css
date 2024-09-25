@@ -7,6 +7,14 @@ html {
     background: url('./assets/guillaume-le-louarn-uC21aXJ7yQs-unsplash.jpg');
     background-size: contain;
     color: var(--text-color);
+    
+}
+
+body {
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -31,17 +39,6 @@ label {
     width: 14rem;
 }
 
-.error-message-empty-input,
-.error-message-phone-format,
-.error-message-email-format,
-.error-message-password-not-match {
-    display: none;
-    font-size: 12px;
-    margin-top: -3px;
-    padding: 0;
-
-}
-
 input {
     background-color: #FFFFFF;
     border: 3px solid #D6D9DC;
@@ -62,7 +59,6 @@ input:not(:focus):user-invalid {
     padding-top: 0.2rem;
     font-size: 1.3rem;
     font-weight: 700;
-
 }
 
 legend {
@@ -109,4 +105,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.background-credit {
+   padding-top: 7rem;
 }
